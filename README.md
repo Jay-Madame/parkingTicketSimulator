@@ -4,13 +4,13 @@
 
 Design a set of classes that work together to simulate a police officer issuing a parking ticket.  The classes you should design are:
 
-[ ] __The ParkedCar Class:__
+[x] __The ParkedCar Class:__
   This class should simulate a parked car.  The class's responsibilities are:
-    [ ] To know the car's make, model, color, license number, and the number of minutes the car has been parked.
+    [x] To know the car's make, model, color, license number, and the number of minutes the car has been parked.
 
-[ ] __The ParkingMeter Class:__
+[x] __The ParkingMeter Class:__
  This class should simulate a parking meter.  The class's only responsibility is:
-    [ ] To know the number of minutes of parking time that has been purchased.
+    [x] To know the number of minutes of parking time that has been purchased.
 
 [ ] __The ParkingTicket Class:__
  This class should simulate a parking ticket.  The class's responsibilities are:
