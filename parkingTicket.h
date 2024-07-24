@@ -17,7 +17,7 @@
 #pragma once
 #include "parkedCar.h"
 #include "parkingMeter.h"
-#include "policeOfficer.h"
+#include "policeOfficer.cpp"
 #include <ostream>
 
 class parkingTicket
@@ -29,7 +29,8 @@ private:
     policeOfficer police;
 
 public:
-    parkingTicket(parkedCar, policeOfficer, parkingMeter);
+    parkingTicket(parkedCar car, policeOfficer officer, parkingMeter meter);
     double getFine() const;
+    static double calculateFine(int minutes);
     friend std::ostream &operator<<(std::ostream &strm, const parkingTicket &obj);
 };

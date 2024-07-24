@@ -1,6 +1,6 @@
 #include "parkingMeter.h"
 
-int parkingMeter::getMinPurchased()
+int parkingMeter::getMinPurchased() const
 {
     return minPurchased;
 }

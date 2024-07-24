@@ -18,6 +18,6 @@ private:
     int minPurchased;
 
 public:
-    int getMinPurchased();
+    int getMinPurchased() const;
     void setMinPurchased(int num);
 };

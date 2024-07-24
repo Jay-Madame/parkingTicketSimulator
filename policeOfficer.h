@@ -14,7 +14,17 @@
 ***************************************************************************************/
 
 #pragma once
+#include "parkedCar.h"
+#include "parkingMeter.h"
 
-class policeOfficer{
+class policeOfficer
+{
+private:
+    std::string name, badgeNum;
 
+    policeOfficer(std::string n, std::string bdgn);
+    std::string getName() const;
+    std::string getBadge() const;
+    bool isTimeExpired(const parkedCar &car, const parkingMeter &meter) const;
+    parkingTicket generateTicket(const parkedCar &car, const parkingMeter &meter) const;
 };
